@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  # pre_build:
+  #   commands:
+  #     - npm install
+  # build:
+  #   commands:
+  #     - npm run build
+  pre_build:
+    commands:
+      - echo "pre-build success"
+  build:
+    commands:
+      - echo "build success"
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - "**/*"
